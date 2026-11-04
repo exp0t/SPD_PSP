@@ -104,8 +104,9 @@ def main():
                     scales.append('%s %d' % (rel, 2))
                     continue
             if n.endswith('.ogg') and rel.startswith('music/'):
-                # the PSP decodes music in hardware from SPD's MP3 set (made for iOS); the game still asks for .ogg
-                shutil.copyfile(os.path.join(ROOT, 'ios', 'assets', rel[:-4] + '.mp3'), dst[:-4] + '.mp3')
+                # the PSP decodes music in hardware from SPD's MP3 set (made for iOS, kept in psp/assets/music);
+                # the game still asks for .ogg
+                shutil.copyfile(os.path.join(PSP, 'assets', rel[:-4] + '.mp3'), dst[:-4] + '.mp3')
                 continue
             if rel in TEXT or rel in NEW_TEXT:
                 patch_properties(src, dst, TEXT.get(rel, {}), NEW_TEXT.get(rel, {}))

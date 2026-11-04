@@ -22,3 +22,6 @@ The result goes to `psp/dist/SPD/` (EBOOT.PBP + assets); copy the folder to `ms0
 - `patches.py` — small edits to SPD sources at build time (single-threaded actor loop and others)
 - `native/` — C layer: sceGu renderer, images, FreeType text, controls, audio, files
 - `tools/` — TeaVM runner and plugin, C runtime patches, resource conversion, PPSSPP run with log
+- `assets/music/` — SPD's MP3 music set (from its iOS build), decoded in hardware on the PSP
+
+The game sources (`SPD-classes/`, `core/`, `services/`) are Shattered Pixel Dungeon 4.0.2, unchanged: PSP edits live in `java/` and `patches.py`.

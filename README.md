@@ -2,6 +2,8 @@
 
 Unofficial port of Shattered Pixel Dungeon 4.0.2 to the Sony PSP (PSP-2000/3000/Go, custom firmware), by yotta imoto and Claude. Full game, PSP button controls, UI adapted to 480×272. Build instructions and layout: [psp/README.md](psp/README.md).
 
+This repository builds only the PSP version: the Gradle build and the Android, desktop and iOS launchers were removed. For those platforms use the [original repository](https://github.com/00-Evan/shattered-pixel-dungeon).
+
 **Install:** copy the `SPD` folder from the [release](https://github.com/exp0t/SPD_PSP/releases) archive to `PSP/GAME/` on the memory stick. PSP-1000 is not supported (not enough memory).
 
 ### What the port does
