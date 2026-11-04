@@ -1,0 +1,42 @@
+# Built application files
+*.apk
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Gradle build files
+.gradle/
+build/
+release/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+#intellij project files
+*.iml
+*.idea
+
+# PSP port: build outputs, downloaded dependencies (psp/tools/fetch_deps.py), local test data
+/psp/dist/
+/psp/native/obj/
+/psp/native/*.o
+/psp/native/*.elf
+/psp/native/EBOOT.PBP
+/psp/native/PARAM.SFO
+/psp/native/ICON0.PNG
+/psp/native/PIC1.PNG
+/psp/tools/lib/
+/psp/tools/src/
+/psp/tools/cruntime/
+/psp/tools/runner/out/
+/psp/tools/runner/plugin/*.class
+/psp/test/hello/c/
+/psp/test/hello/classes/
+__pycache__/
+SPD_LOG.TXT
+spd_log.txt
+spd_boot.txt
+/psp/tools/listlibs*.sh
