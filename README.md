@@ -2,6 +2,46 @@
 
 Unofficial port of Shattered Pixel Dungeon 4.0.2 to the Sony PSP (PSP-2000/3000/Go, custom firmware), by yotta imoto and Claude. Full game, PSP button controls, UI adapted to 480×272. Build instructions and layout: [psp/README.md](psp/README.md).
 
+**Install:** copy the `SPD` folder from the [release](https://github.com/exp0t/SPD_PSP/releases) archive to `PSP/GAME/` on the memory stick. PSP-1000 is not supported (not enough memory).
+
+### What the port does
+
+- Java code compiled to C with TeaVM, single-threaded; libGDX replaced by small shims and a native layer written for the PSP
+- Own sceGu renderer: textures in the GE's swizzled format, pipelined frames with triple buffering, only visible map cells drawn
+- Audio mixer for sound effects and hardware MP3 decoding for music
+- UI, windows and HUD scaled for 480×272; text rasterized at screen resolution, so it stays sharp
+- Full button controls without a pointer: menu navigation, tile cursor, button hints on the HUD
+- "Fixed camera" display option (hero always centred), in all 23 game languages
+- Fixes for real hardware: CPU cache handling, FPU exceptions, crash-safe boot logs
+- XMB icon and background, loading indicator at startup
+
+### Controls
+
+| In the dungeon | |
+|---|---|
+| D-pad / analog stick | move (a tap is one step, hold to walk) |
+| Cross | tile cursor (targeted items and wands start it on the nearest enemy); Cross picks the tile, Select+Cross opens its action menu, Circle cancels |
+| Circle | inventory |
+| Start | game menu |
+| Select (tap) | journal |
+| Square | wait / pick up |
+| Triangle | inventory selector |
+| L | quickslot selector |
+| R | attack the nearest enemy |
+| Select+Square | rest |
+| Select+Circle | examine |
+| Select+Triangle | hero info |
+| Select+L / Select+R | zoom out / zoom in |
+| Select+D-pad | ↑ action, ← loot, ↓ resume, → next enemy |
+
+| In menus | |
+|---|---|
+| D-pad / analog stick | move the selection (lists scroll with it) |
+| Cross | press the selected item |
+| Circle | back |
+| Sliders | Cross to edit, ←/→ to change, Cross or Circle to finish |
+| Radial menus | pick a direction, Cross to confirm |
+
 The original README follows.
 
 ---
